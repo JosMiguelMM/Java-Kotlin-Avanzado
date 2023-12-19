@@ -5,6 +5,7 @@ plugins {
 group = "org.javakotlin"
 version = "1.0-SNAPSHOT"
 
+
 repositories {
   mavenCentral()
 }
@@ -32,3 +33,8 @@ sourceSets {
   }
 }
 
+tasks.jar {
+  manifest {
+    attributes["Main-Class"] = "org.javakotlin.MainKt"
+  }
+}
