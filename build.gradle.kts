@@ -33,8 +33,9 @@ sourceSets {
   }
 }
 
-tasks.jar {
+// Define la clase principal para el .jar
+/*tasks.jar {
   manifest {
     attributes["Main-Class"] = "org.javakotlin.MainKt"
   }
-}
+}*/

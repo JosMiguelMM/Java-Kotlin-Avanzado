@@ -3,7 +3,11 @@ package model;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Movie extends Film implements IVisualizable{
+/**
+ * Hereda de {@link Film}
+ * Implementa de {@link IVisualizable}
+ */
+public class Movie extends Film implements IVisualizable {
 
   private int id;
   private int timeViewed;
@@ -23,14 +27,18 @@ public class Movie extends Film implements IVisualizable{
   public int getTimeViewed() {
     return timeViewed;
   }
+
   public void setTimeViewed(int timeViewed) {
     this.timeViewed = timeViewed;
   }
 
+  /**
+   * {@inheritDoc}
+   */
   @Override
   public String toString() {
     // TODO Auto-generated method stub
-    return  "\n :: MOVIE ::" +
+    return "\n :: MOVIE ::" +
       "\n Title: " + getTitle() +
       "\n Genero: " + getGenre() +
       "\n Year: " + getYear() +
@@ -38,19 +46,25 @@ public class Movie extends Film implements IVisualizable{
       "\n Duration: " + getDuration();
   }
 
+  /**
+   * {@inheritDoc}
+   */
   @Override
   public Date startToSee(Date dateI) {
     // TODO Auto-generated method stub
     return dateI;
   }
 
+  /**
+   * {@inheritDoc}
+   */
   @Override
   public void stopToSee(Date dateI, Date dateF) {
     // TODO Auto-generated method stub
 
     if (dateF.getTime() > dateI.getTime()) {
-      setTimeViewed((int)(dateF.getTime() - dateI.getTime()));
-    }else {
+      setTimeViewed((int) (dateF.getTime() - dateI.getTime()));
+    } else {
       setTimeViewed(0);
     }
 
@@ -61,11 +75,31 @@ public class Movie extends Film implements IVisualizable{
     ArrayList<Movie> movies = new ArrayList();
 
     for (int i = 1; i <= 5; i++) {
-      movies.add(new Movie("Movie " + i, "Genero " + i, "Creador " + i, 120+i, (short)(2017+i)));
+      movies.add(new Movie("Movie " + i, "Genero " + i, "Creador " + i, 120 + i, (short) (2017 + i)));
     }
 
     return movies;
   }
 
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public void view() {
+    setViewed(true);
+    Date dateI = startToSee(new Date());
+
+    for (int i = 0; i < 100000; i++) {
+      System.out.println("..........");
+    }
+
+    //Termine de verla
+    stopToSee(dateI, new Date());
+    System.out.println();
+    System.out.println("Viste: " + toString());
+    System.out.println("Por: " + getTimeViewed() + " milisegundos");
+
+
+  }
 }
 

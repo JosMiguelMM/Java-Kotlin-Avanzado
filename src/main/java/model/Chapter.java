@@ -2,7 +2,12 @@ package model;
 
 import java.util.ArrayList;
 
-public class Chapter extends Movie{
+/**
+ * Hereda de {@link Film}
+ *
+ * @see Film
+ */
+public class Chapter extends Movie {
 
   private int id;
   private int sessionNumber;
@@ -41,7 +46,7 @@ public class Chapter extends Movie{
   @Override
   public String toString() {
     // TODO Auto-generated method stub
-    return  "\n :: SERIE ::" +
+    return "\n :: SERIE ::" +
       "\n Title: " + getSerie().getTitle() +
       "\n :: CHAPTER ::" +
       "\n Title: " + getTitle() +
@@ -55,11 +60,28 @@ public class Chapter extends Movie{
     ArrayList<Chapter> chapters = new ArrayList();
 
     for (int i = 1; i <= 5; i++) {
-      chapters.add(new Chapter("Capituo "+i, "genero "+i, "creator" +i, 45, (short)(2017+i), i, serie));
+      chapters.add(new Chapter("Capituo " + i, "genero " + i, "creator" + i, 45, (short) (2017 + i), i, serie));
     }
 
     return chapters;
   }
 
+
+  @Override
+  public void view() {
+    super.view();
+    ArrayList<Chapter> chapters = getSerie().getChapters();
+    int chapterViewedCounter = 0;
+
+    for (Chapter chapter : chapters) {
+      if (chapter.getIsViewed()) {
+        chapterViewedCounter++;
+      }
+    }
+
+    if (chapterViewedCounter == chapters.size()) {
+      getSerie().view();
+    }
+  }
 }
 
