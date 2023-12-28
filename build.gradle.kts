@@ -37,4 +37,5 @@ tasks.jar {
   manifest {
     attributes["Main-Class"] = "org.javakotlin.MainKt"
   }
+  from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 }
