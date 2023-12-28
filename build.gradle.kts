@@ -12,6 +12,9 @@ repositories {
 
 dependencies {
   testImplementation("org.jetbrains.kotlin:kotlin-test")
+
+  // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+  implementation("com.mysql:mysql-connector-j:8.2.0")
 }
 
 tasks.test {
@@ -34,8 +37,9 @@ sourceSets {
 }
 
 // Define la clase principal para el .jar
-/*tasks.jar {
+tasks.jar {
   manifest {
     attributes["Main-Class"] = "org.javakotlin.MainKt"
   }
-}*/
+  from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+}
