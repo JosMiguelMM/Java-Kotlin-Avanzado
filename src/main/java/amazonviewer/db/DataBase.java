@@ -13,6 +13,7 @@ public class DataBase {
   public static final String TMOVIE_CREATOR = "creator";
   public static final String TMOVIE_DURATION = "duration";
   public static final String TMOVIE_YEAR = "year";
+  public static final String TMOVIE_FECHA_VISTO = "fecha_visto";
 
 
   public static final String TMATERIAL = "material";

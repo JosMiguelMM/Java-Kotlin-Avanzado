@@ -67,9 +67,10 @@ public class Menu {
     } while (exit != 0);
   }
 
-  static ArrayList<Movie> movies = Movie.makeMoviesList();
+  static ArrayList<Movie> movies = new ArrayList<>();
 
   public static void showMovies() {
+    movies = Movie.makeMoviesList();
     int exit = 1;
 
     do {
@@ -78,7 +79,7 @@ public class Menu {
       System.out.println();
 
       for (int i = 0; i < movies.size(); i++) { //1. Movie 1
-        System.out.println(i + 1 + ". " + movies.get(i).getTitle() + " Visto: " + movies.get(i).isViewed());
+        System.out.println(i + 1 + ". " + movies.get(i).getTitle() +" Genero: "+movies.get(i).getGenre()+ " Visto: " + movies.get(i).isViewed());
       }
 
       System.out.println("0. Regresar al Menu");
@@ -86,6 +87,7 @@ public class Menu {
 
       //Leer Respuesta usuario
       int response = AmazonUtil.validateUserResponseMenu(0, movies.size());
+      System.out.println("La respues es " + response + " Modificada es " + response);
 
       if (response == 0) {
         exit = 0;

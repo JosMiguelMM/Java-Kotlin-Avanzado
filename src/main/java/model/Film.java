@@ -80,7 +80,7 @@ public abstract class Film {
   public String isViewed() {
     String visto = "";
     if (viewed == true) {
-      visto = "Sí";
+      visto = "Si";
     } else {
       visto = "No";
     }
