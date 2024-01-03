@@ -1,6 +1,8 @@
 package org.javakotlin
 
 import Menu
+import org.javakotlin.lambdas.Llamado
+import org.javakotlin.lambdas.OnOneListener
 
 /**
  * # AmazonViewr
@@ -16,5 +18,8 @@ import Menu
  * */
 
 fun main() {
-  Menu.showMenu()
+  //Menu.showMenu()
+  val lam: Llamado = Llamado();
+  lam.invocacion()
+
 }

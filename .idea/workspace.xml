@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc275a23-6255-4536-9bca-ffc607d29593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lam/Lamb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lambdas/Llamado.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lambdas/OnOneListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amazonviewer/dao/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amazonviewer/dao/MovieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amazonviewer/db/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amazonviewer/db/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,15 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,6 +162,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.JavaKotlinAvanzado [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +186,9 @@
       <workItem from="1703825076636" duration="2671000" />
       <workItem from="1703880312652" duration="6952000" />
       <workItem from="1703982497890" duration="7637000" />
+      <workItem from="1704067999128" duration="1894000" />
+      <workItem from="1704252249707" duration="5464000" />
+      <workItem from="1704297446462" duration="4564000" />
     </task>
     <servers />
   </component>
