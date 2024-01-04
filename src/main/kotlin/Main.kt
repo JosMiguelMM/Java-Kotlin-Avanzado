@@ -18,8 +18,8 @@ import org.javakotlin.lambdas.OnOneListener
  * */
 
 fun main() {
-  //Menu.showMenu()
-  val lam: Llamado = Llamado();
-  lam.invocacion()
+  Menu.showMenu()
+  //val lam: Llamado = Llamado();
+  //lam.invocacion()
 
 }

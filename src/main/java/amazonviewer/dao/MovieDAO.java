@@ -4,7 +4,6 @@ import amazonviewer.db.IDBConnection;
 import model.Movie;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import static amazonviewer.db.DataBase.*;
@@ -13,8 +12,6 @@ public interface MovieDAO extends IDBConnection {
   default Movie setMovieViewed(Movie movie) {
     try (Connection connection = connectToDB()) {
       Statement statement = connection.createStatement();
-
-      String fecha = "'" + movie.getDateViewed() + "'";
 
       String query = "INSERT INTO " + TVIEWED +
         " (" + TVIEWED_ID_MATERIAL + ", " + TVIEWED_ID_ELEMENT +

@@ -11,7 +11,12 @@ public class Lamb {
     OnOneListener oneListener2 = (String message) -> {
       System.out.println("Con lambda con " + message);
     };
+
+    OnOneListener oneListener3 = message -> System.out.println("Con lambdas optimizadas " + message);
+
     oneListener.onOne(" Java ");
-    oneListener2.onOne(" Java \n");
+    oneListener2.onOne(" Java ");
+    oneListener3.onOne(" Java \n");
+
   }
 }

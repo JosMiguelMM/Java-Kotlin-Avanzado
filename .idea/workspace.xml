@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc275a23-6255-4536-9bca-ffc607d29593" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lam/Lamb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lambdas/Llamado.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lambdas/OnOneListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amazonviewer/dao/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amazonviewer/dao/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lam/Lamb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lam/Lamb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lambdas/Llamado.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lambdas/Llamado.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +94,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -188,7 +189,10 @@
       <workItem from="1703982497890" duration="7637000" />
       <workItem from="1704067999128" duration="1894000" />
       <workItem from="1704252249707" duration="5464000" />
-      <workItem from="1704297446462" duration="4564000" />
+      <workItem from="1704297446462" duration="12851000" />
+      <workItem from="1704382817242" duration="113000" />
+      <workItem from="1704382991966" duration="2867000" />
+      <workItem from="1704389717848" duration="5218000" />
     </task>
     <servers />
   </component>

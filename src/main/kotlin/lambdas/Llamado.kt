@@ -12,6 +12,7 @@ class Llamado {
     }
     val oneListener2: OnOneListener =
       OnOneListener { message: String -> println("Usando lambdas con $message") }
+
     Lamb.me()
     oneListener.onOne(" Kotlin")
     oneListener2.onOne(" Kotlin")
